@@ -1,3 +1,3 @@
 
 FROM python
-RUN pip install pandas
+RUN pip install pandas, matplotlib
