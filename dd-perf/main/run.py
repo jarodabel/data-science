@@ -24,6 +24,8 @@ print(locks_by_session.head())
 
 sessions_by_version = calculate_sessions_by_field(prod_data.filter(items=["version", "browser_session_id"]), "browser_session_id")
 print(sessions_by_version.head())
+
+locks_by_browser_type = calculate_total_locks_by_field(prod_data.filter)
 # prod_data_grouped = (
 #     prod_data.filter(items=["date", "version", "total_locks"])
 #     .groupby(["version", "date"])
